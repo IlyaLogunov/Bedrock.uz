@@ -1,0 +1,13 @@
+head {
+    background: yellowgreen;
+  }
+  p {
+    color: black;
+  }
+  h1 {
+    text-align: center;
+    font-weight: inherit;
+  }
+  h2{
+      text-align: right; 
+  }
