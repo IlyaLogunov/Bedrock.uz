@@ -1,6 +1,9 @@
 body {
     background: white;
   }
+head {
+    background: black;
+}
   p {
     color: black;
   }
