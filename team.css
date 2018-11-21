@@ -1,3 +1,6 @@
-head {
+body {
     background-image: url(our team.jpg);
+}
+h1 {
+   text-align: center;
 }
