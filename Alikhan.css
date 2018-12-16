@@ -1,0 +1,20 @@
+body {
+    background: white;
+  }
+head {
+    background: black;
+}
+  p {
+    color: yellow;
+  }
+  h1 {
+    text-transform: unset;
+    text-align: center;
+    font-weight: lighter;
+    color: blue;
+  }
+  h2 {
+    text-align: right;
+    font-weight: inherit;
+  }
+
