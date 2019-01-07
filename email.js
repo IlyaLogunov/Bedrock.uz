@@ -12,7 +12,7 @@ var mailOptions = {
   from: 'bedrock.uz.site@gmail.com',
   to: 'l79l@yandex.ru',
   subject: 'Sending Email using Node.js',
-  text: 'Hello!'
+  text: 'Welcome to Bedrock.uz!'
 };
 
 transporter.sendMail(mailOptions, function(error, info){
