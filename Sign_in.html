@@ -18,12 +18,39 @@
               <a href="Sign_in.html">Sign In</a>
             </h1>
               <hr>
-   <form action="welcome_get.php" method="get">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-Password: <imput type="password" name="psw"><br>
-<input type="submit">
-</form>
+   <?php
+// define variables and set to empty values
+$name = $email = $psw = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $email = test_input($_POST["email"]);
+  $pws = test_input($_POST["psw"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+<h2>PHP Form Validation Example</h2>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Name: <input type="text" name="name">
+  <br><br>
+  E-mail: <input type="text" name="email">
+  <br><br>
+  Password: <input type="password" name="psw">
+  <br><br>
+    </form>
+  <?php
+echo "Hi, " $name;
+echo "<br>";
+echo "Look at your e-mail: " $email;
+echo "<br>";
+echo "Don't forget your password is " $psw;
+?>
 
   </body>
 </html>
