@@ -3,21 +3,34 @@
   <head>
       <link rel="shortcut icon" type="image/x-ico" href="http://www.bedrock.uz/favicon.ico">
     <title>News  of Bedrock.uz</title>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
     <link rel="stylesheet" href="style1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <h1><a href="index.html">
-        <img src="Bedrock.png" alt="bedrock"/>
-        </a></h1>
+   <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d2">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="bedrock.jpg" alt="avatar" style="width:70%">
+  </div>
+</div>
+<ul>
+  <li><a class="w3-bar-item w3-button" href="news.html">News</a></li>
+  <li><a class="w3-bar-item w3-button" href="team.html">Contact us</a></li>
+  <li><a class="w3-bar-item w3-button" href="projects.html">Projects</a></li>
+</ul>
+</nav>
+
+<header class="w3-top w3-bar w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar(closeSidebar)">&#9776;</button>
+  <h1><a href="index.html">
+      <img src="Bedrock.png" alt="bedrock" />
+    </a></h1>
+</header>
+    <div class="w3-container" style="margin-top:110px">
         <hr>
-            <h1><a href="news.html">News!</a>
-              <a href="team.html">Contact us!</a>
-              <a href="index.html">Home!</a>
-               <a href="projects.html">Projects</a>
-              <a href="Sign_in.html">Sign In</a>
-            </h1>
-              <hr>
     <h1>Here are the news of our server!</h1>
     <p><a href="SunPack.mcpack">
         <img src="SunPack.png" alt="downloadSunPack"/>
@@ -25,5 +38,14 @@
     <a href="AdventureBy6.mcworld">
         <img src="Adventure.png" alt="downloadAdventureBy6"/>
       </a></p>
+      <script>
+closeSidebar();
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+  </script>
   </body>
 </html>
