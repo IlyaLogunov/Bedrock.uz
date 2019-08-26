@@ -4,11 +4,32 @@
      
        <title>The Team Of Bedrock.uz</title>
      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="pro.css">
       <link rel="stylesheet" href="team.css">
       <link rel="shortcut icon" type="image/x-ico" href="https://www.bedrock.uz/favicon.ico">
               
   </head>
   <body>
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d2">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">x</span>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="bedrock.jpg" alt="avatar" style="width:75%">
+  </div>
+</div>
+<ul>
+  <li><a class="w3-bar-item w3-button" href="news.html">News</a></li>
+  <li><a class="w3-bar-item w3-button" href="team.html">Contact us</a></li>
+  <li><a class="w3-bar-item w3-button" href="projects.html">Projects</a></li>
+</ul>
+</nav>
+
+<header class="w3-top w3-bar w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  <h1><a href="index.html">
+      <img src="Bedrock.png" alt="bedrock" />
+    </a></h1>
+</header>
      <h1><a href="index.html">
         <img src="Bedrock.png" alt="bedrock"/>
         </a></h1>
@@ -22,4 +43,12 @@
               <hr>
     <a href="GoldenGuy.html">
        <img src="2trr1v.gif" alt="Me"></a>
+    script>
+closeSidebar();
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
   </body>
