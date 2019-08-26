@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="shortcut icon" type="image/x-ico" href="https://www.bedrock.uz/favicon.ico">
     <title>Projects on Bedrock.uz</title>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
     <link rel="stylesheet" href="projects.css">
   </head>
   <body>
-    <h1><a href="index.html">
-        <img src="Bedrock.png" alt="bedrock"/>
-        </a></h1>
+     <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d2">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="bedrock.jpg" alt="avatar" style="width:70%">
+  </div>
+</div>
+<ul>
+  <li><a class="w3-bar-item w3-button" href="news.html">News</a></li>
+  <li><a class="w3-bar-item w3-button" href="team.html">Contact us</a></li>
+  <li><a class="w3-bar-item w3-button" href="projects.html">Projects</a></li>
+</ul>
+</nav>
+
+<header class="w3-top w3-bar w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar(closeSidebar)">&#9776;</button>
+  <h1><a href="index.html">
+      <img src="Bedrock.png" alt="bedrock" />
+    </a></h1>
+</header>
+    <div class="w3-container" style="margin-top:110px">
         <hr>
-            <h1><a href="news.html">News!</a>
-              <a href="team.html">Contact us!</a>
-              <a href="index.html">Home!</a>
-              <a href="projects.html">Projects</a>
-              <a href="Sign_in.html">Sign in</a>
-            </h1>
-              <hr>
+             <hr>
     <h1>Here are the projecs of my little friends!</h1>
     <h2><a href="Alikhan.html">Alikhan</a></h2>
+      <script>
+closeSidebar();
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+  </script>
   </body>
 </html>
