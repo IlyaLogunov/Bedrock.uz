@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <link rel="shortcut icon" type="image/x-ico" href="https://www.bedrock.uz/favicon.ico">
-    <title>News  of Bedrock.uz</title>
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-   <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+
+<head>
+  <title>news of Bedrock.uz</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="pro.css">
+  <link rel="shortcut icon" type="image/x-ico" href="https://www.bedrock.uz/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  
+  
+</head>
+
+<body>
+  <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
 <div class="w3-container w3-theme-d2">
-  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-  <br>
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">x</span>
   <div class="w3-padding w3-center">
-    <img class="w3-circle" src="bedrock.jpg" alt="avatar" style="width:70%">
+    <img class="w3-circle" src="bedrock.jpg" alt="avatar" style="width:75%">
   </div>
 </div>
 <ul>
@@ -24,24 +27,16 @@
 </nav>
 
 <header class="w3-top w3-bar w3-theme">
-  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar(closeSidebar)">&#9776;</button>
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
   <h1><a href="index.html">
       <img src="Bedrock.png" alt="bedrock" />
     </a></h1>
 </header>
-    <div class="w3-container" style="margin-top:110px">
-        <hr>
-    <h1>Here are the news of our server!</h1>
-    <p><a href="SunPack.mcpack">
-        <img src="SunPack.png" alt="downloadSunPack"/>
-        </a>
-    <a href="AdventureBy6.mcworld">
-        <img src="Adventure.png" alt="downloadAdventureBy6"/>
-      </a></p>
-      <a href="downloads/ChairAddon.html">
-        <img src="Chair.png" alt="downloadchair/>
-      </a></p>
-      <script>
+  <div class="w3-container" style="margin-top:90px">
+  <hr>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Up!</button>
+  <script>
 closeSidebar();
 function openSidebar() {
   document.getElementById("mySidebar").style.display = "block";
@@ -50,5 +45,22 @@ function closeSidebar() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
-  </body>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+
 </html>
