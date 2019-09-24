@@ -13,8 +13,6 @@ head {
   }
 body {
   background-image: url(2wl.png);
-  height:auto;
-  width:100%;
 }
 #myBtn {
   display: none;
