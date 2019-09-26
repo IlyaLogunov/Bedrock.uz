@@ -18,3 +18,8 @@ head {
     text-align: right;
     font-weight: inherit;
   }
+.title {
+    height:auto;
+    width:30%;
+}
+
