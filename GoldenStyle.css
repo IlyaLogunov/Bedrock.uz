@@ -14,3 +14,8 @@ head {
   h2 {
       text-align: left
   }
+.title {
+    height:auto;
+    width:100%;
+}
+
