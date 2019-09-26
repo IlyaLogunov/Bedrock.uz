@@ -34,5 +34,10 @@ head {
   border-radius: 4px;
 }
 .w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.title {
+    height:auto;
+    width:30%;
+}
+
   
   
