@@ -37,4 +37,9 @@ body {
     height:auto;
     width:25%;
 }
-
+.right {
+right: 30px;
+}
+.left {
+left: 30px;
+}
