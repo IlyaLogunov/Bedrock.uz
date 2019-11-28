@@ -1,11 +1,25 @@
-body {
-    background-image: url(ourTeam.jpg);
-}
 h1 {
    text-align: center;
 }
 .title {
     height:auto;
     width:25%;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("ourTeam.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
